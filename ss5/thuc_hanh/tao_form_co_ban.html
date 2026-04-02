@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Order Form</h1>
+    <h3>What would you like to buy?</h3>
+    <select name="demo">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+    </select>
+    <h3>How many would you like to oder?</h3>
+    <form action="/action_page.php">
+        <label><input name="number" value="one" type="radio" checked />1 - $10</label> <br />
+        <label><input name="number" value="two" type="radio" />2 - $20</label> <br />
+        <label><input name="number" value="three" type="radio" />3 - $25</label> <br />
+    </form>
+    <h3>Name <span style="color: red;">*</span></h3>
+    <input type="text" name="fisrt name" id="1" placeholder="Fisrt name">
+    <input type="text" name="last name" id="2" placeholder="Last name">
+    <h3>Email</h3>
+    <input type="text" name="email">
+    <h3>Phone Number</h3>
+    <div class="input-group">
+        <input type="text" maxlength="2">
+        <span>-</span>
+        <input type="text" maxlength="2">
+        <span>-</span>
+        <input type="text" maxlength="2">
+    </div> <br>
+    <input type="Submit" value="Submid"/>
+</body>
+</html>
