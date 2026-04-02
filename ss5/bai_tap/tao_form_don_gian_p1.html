@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: red;
+            color: white;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #e0faff;
+        }
+
+        .buttons {
+            text-align:   center;
+            padding-top: 15 px;
+        }
+
+        
+
+        .label {
+            width: 100px;
+            font-weight: bold;
+            vertical-align: top;
+            color: blue;
+        }
+        .hobby-text{
+            color: #ff6600; font-size: 14px;
+        }
+        .buttons{
+            text-align: left;
+            padding-left: 0;
+            padding-top: 15px;
+        }
+
+        .form-box {
+            width: 550px;
+            margin: auto;
+            background: white;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+        <form action="https://github.com/tkien07/Module1.git" method="POST">
+            <table border="0" width="100%">
+                <tr>
+                    <td class="label">Họ và tên:</td><br>
+                    <td><input type="text" name="yourname" style="width: 100px;"></td>
+                </tr>
+                <tr>
+                    <td class="label">Email:</td>
+                    <td><input type="email" name="email" style="width: 200px;"></td>
+                </tr>
+
+                <tr valign="top">
+                    <td class="label">Sở thích:</td>
+                    <td class="hobby-text">
+                        <input type="checkbox" name="hobby" value="thethao"> Thể thao
+                        <input type="checkbox" name="hobby" value="amnhac" style="margin-left: 15px;"> Âm nhạc
+                        <input type="checkbox" name="hobby" value="docsach" style="margin-left: 15px;"> Đọc sách <br>
+
+                        <input type="checkbox" name="hobby" value="luotweb"> Lướt web
+                        <input type="checkbox" name="hobby" value="choigame" style="margin-left: 10px;"> Chơi game
+                        <input type="checkbox" name="hobby" value="dienanh" style="margin-left: 5px;"> Điện ảnh <br>
+
+                        <input type="checkbox" name="hobby" value="dulich"> Du lịch
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="buttons">
+                        <input type="submit" value="Gửi thông tin">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>
