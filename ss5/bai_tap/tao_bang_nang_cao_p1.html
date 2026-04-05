@@ -5,38 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        .board {
+            background-color: orange;
+            padding: 20px;
+            width: 500px;
+            
+        }
+
+        th {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+        /* td:nth-child:(odd) xen kẻ lẻ */
+        tr td:nth-child(odd) {
+            background-color: #ddd;
+        }
+        /* td:nth-child:(odd) xen kẻ chẵn */
+        tr td:nth-child(even) {
+            background-color: black;
+        }
+
+        /* Đảo màu hàng chẵn */
+        tr:nth-child(even) td:nth-child(odd) {
+            background-color: black;
+        }
+
+        tr:nth-child(even) td:nth-child(even) {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="board"></div>
-    <table>
+    <div class="board">
+        <table>
 
         <tr>
-            <th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th> <th>7</th><th>8</th>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
         </tr>
         <tr>
-            <th>A</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>           
+            <th>A</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>B</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>B</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>C</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>C</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>D</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>D</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>E</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>E</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>F</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>F</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>G</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>G</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <th>H</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td> 
+            <th>H</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
     </div>

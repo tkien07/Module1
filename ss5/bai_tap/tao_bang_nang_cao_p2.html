@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .thu {
+            display: flex;
+            width: fit-content;
+            border: 2px solid white;
+            margin: auto;
+        }
+
+        .day {
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border-right: 2px solid rgb(255, 253, 253);
+        }
+
+        .cn {
+            background-color: red;
+        }
+
+        .cv {
+            background-color: orange;
+        }
+
+        .tbay {
+            background-color: blue;
+        }
+
+        .thungay {
+            display: flex;
+            width: fit-content;
+            margin: auto;
+            border: 2px solid white;
+
+        }
+
+        .ngay {
+            padding: 15px 25px;
+            color: rgb(14, 13, 13);
+            font-weight: bold;
+            text-align: center;
+            border-right: 2px solid rgb(255, 253, 253);
+        }
+
+        .sun {
+            color: red;
+        }
+
+        .thuong {
+            color: black;
+        }
+
+        .sat {
+            color: blue;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .day,
+        .ngay {
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+
+            padding: 20px;
+            width: 500px;
+        }
+
+        .calendai {
+            border-collapse: collapse;
+            background-color: white;
+            border: 3px solid #6e6d6d;
+
+
+        }
+
+        body {
+            
+        }
+        .calendar th,
+        .calendar td {
+            border: none;
+            width: 60px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tháng 10 - October</h1>
+    <div class="wrapper">
+        <div class="thu rowtop">
+            <div class="day cn">C.Nhật</div>
+            <div class="day cv">T.Hai</div>
+            <div class="day cv">T.Ba</div>
+            <div class="day cv">T.Tư</div>
+            <div class="day cv">T.Năm</div>
+            <div class="day cv">T.Sáu</div>
+            <div class="day tbay">T.Bảy</div>
+        </div>
+
+        <div class="thungay rowbottom">
+            <div class="ngay sun">Sun</div>
+            <div class="ngay thuong">Mon</div>
+            <div class="ngay thuong">Tue</div>
+            <div class="ngay thuong">Wed</div>
+            <div class="ngay thuong">Thu</div>
+            <div class="ngay thuong">Fri</div>
+            <div class="ngay sat">Sat</div>
+        </div>
+        <div>
+            <table class="calendai">
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="sat">3</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="sat">10</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td class="sat">17</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td class="sat">24</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td class="sat">31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
