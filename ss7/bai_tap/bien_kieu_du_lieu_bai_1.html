@@ -39,13 +39,13 @@
 
       <!-- Bài 3 -->
        <!-- <h1>Tính diện tích hình tròn</h1>
-       <input style="margin-bottom: 15px;" type="number" id="bk" placeholder="Nhập bán kính"> <br>
-       <input style="margin-bottom: 15px;" type="number" id="bk" placeholder="Nhập bán kính"><br>
+       <input style="margin-bottom: 15px;" type="number" id="bankinh" placeholder="Nhập bán kính"> <br>
+       <input style="margin-bottom: 15px;" type="number" id="bankinh" placeholder="Nhập bán kính"><br>
       <button onclick="doi()">Tính toán</button>
         <p id="ketqua"></p>
       <script>
             function doi(){
-                let r = document.getElementById("bk").value; 
+                let r = document.getElementById("bankinh").value; 
                 let S = r * r * 3.14;
                 document.getElementById("ketqua").innerText = "Diện tích hình tròn = " + S;
             }
@@ -53,12 +53,12 @@
 
       <!-- Bài 4 -->
         <h1>Tính chu vi hình tròn</h1>
-       <input style="margin-bottom: 15px;" type="number" id="cv" placeholder="Nhập chu vi"> <br>
+       <input style="margin-bottom: 15px;" type="number" id="chuvi" placeholder="Nhập chu vi"> <br>
       <button onclick="doi()">Tính toán</button>
         <p id="ketqua"></p>
       <script>
             function doi(){
-                let d = document.getElementById("cv").value; 
+                let d = document.getElementById("chuvi").value; 
                 let C = d * 3.14;
                 document.getElementById("ketqua").innerText = "Chu vi hình tròn = " + C;
             }
