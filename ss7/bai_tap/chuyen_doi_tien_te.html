@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr><br>
+            <td>
+                <input type="text" id="tien">
+            </td>
+            <td>
+                <select name="vnd" id="vn">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="usd" id="my">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="doi()">Convert</button>
+            </td>
+        </tr>
+    </table>
+
+    <p id="ketqua"></p>
+    <script>
+        function doi() {
+            let tien = parseFloat(document.getElementById("tien").value);
+            let vn = document.getElementById("vn").value;
+            let my = document.getElementById("my").value;
+
+            let tile = 26000;
+            let ketqua;
+
+            if (vn === "VND" && my === "USD") {
+                ketqua = tien / tile;
+            }
+            else if (my === "USD" && vn === "VND") {
+                ketqua = tien * tile;
+            } else {
+                ketqua = tien
+            }
+
+            document.getElementById("ketqua").innerText = "Kết quả: " + ketqua;
+
+        }
+    </script>
+</body>
+
+</html>
