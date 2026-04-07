@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-bottom: 15px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ứng dụng máy tính</h1>
+    <input type="text" name="thu1" id="1">
+    <input type="text" name="thu2" id="2"><br><br>
+    <button onclick="cong()">Cộng</button>
+    <button onclick="tru()">Trừ</button>
+    <button onclick="nhan()">Nhân</button>
+    <button onclick="chia()">Chia</button>
+
+    <p id="ketqua"></p>
+
+    <script>
+        function cong(){
+            let thu1 = parseFloat(document.getElementById("1").value);
+            let thu2 = parseFloat(document.getElementById("2").value);
+
+            let ketqua = thu1 + thu2;
+            document.getElementById("ketqua").innerText = "Kết quả là: " + ketqua;
+        }
+         function tru(){
+            let thu1 = parseFloat(document.getElementById("1").value);
+            let thu2 = parseFloat(document.getElementById("2").value);
+
+            let ketqua = thu1 - thu2;
+            document.getElementById("ketqua").innerText = "Kết quả là: " + ketqua;
+        }
+         function nhan(){
+            let thu1 = parseFloat(document.getElementById("1").value);
+            let thu2 = parseFloat(document.getElementById("2").value);
+
+            let ketqua = thu1 * thu2;
+            document.getElementById("ketqua").innerText = "Kết quả là: " + ketqua;
+        }
+         function chia(){
+            let thu1 = parseFloat(document.getElementById("1").value);
+            let thu2 = parseFloat(document.getElementById("2").value);
+
+            let ketqua = thu1 / thu2;
+            document.getElementById("ketqua").innerText = "Kết quả là: " + ketqua;
+        }
+    </script>
+</body>
+</html>
