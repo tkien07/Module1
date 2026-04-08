@@ -20,43 +20,43 @@
                 <input type="text" id="tien">
             </td>
             <td>
-                <select name="vnd" id="vn">
+                <select name="vnd" id="vietNam">
                     <option value="VND">VND</option>
                     <option value="USD">USD</option>
                 </select>
             </td>
             <td>
-                <select name="usd" id="my">
+                <select name="usd" id="hoaKy">
                     <option value="USD">USD</option>
                     <option value="VND">VND</option>
                 </select>
             </td>
             <td>
-                <button onclick="doi()">Convert</button>
+                <button onclick="chuyenDoi()">Convert</button>
             </td>
         </tr>
     </table>
 
     <p id="ketqua"></p>
     <script>
-        function doi() {
+        function chuyenDoi() {
             let tien = parseFloat(document.getElementById("tien").value);
-            let vn = document.getElementById("vn").value;
-            let my = document.getElementById("my").value;
+            let vietNam = document.getElementById("vietNam").value;
+            let hoaKy = document.getElementById("hoaKy").value;
 
-            let tile = 26000;
-            let ketqua;
+            let tiLe = 26000;
+            let ketQua;
 
             if (vn === "VND" && my === "USD") {
-                ketqua = tien / tile;
+                ketQua = tien / tiLe;
             }
             else if (my === "USD" && vn === "VND") {
-                ketqua = tien * tile;
+                ketQua = tien * tiLe;
             } else {
-                ketqua = tien
+                ketQua = tien
             }
 
-            document.getElementById("ketqua").innerText = "Result: " + ketqua;
+            document.getElementById("ketqua").innerText = "Result: " + ketQua;
 
         }
     </script>
