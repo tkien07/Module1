@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <script>
+        let diemKiemTra = parseFloat(prompt("Nhập điểm kiểm tra"));
+        let diemGiuaKy = parseFloat(prompt("Nhập điểm giữa kỳ"));
+        let diemCuoiKy = parseFloat(prompt("Nhập điểm cuối kỳ"));
+
+        if ((isNaN(diemKiemTra) || isNaN(diemGiuaKy) || isNaN(diemCuoiKy))) {
+            alert("Nhập số hợp lệ")
+        } else {
+            let diemTB = (diemKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+            if (diemTB >= 8) {
+                alert("Học sinh giỏi")
+            } else if (diemTB >= 6.5) {
+                alert("Học sinh khá")
+            } else {
+                alert("Học sinh trung bình")
+            }
+        }
+    </script>
+</body>
+
+</html>

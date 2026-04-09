@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10</title>
+</head>
+
+<body>
+    <script>
+        let soDien = parseFloat(prompt("Nhập số điện"));
+        let tien = 0;
+
+        if (isNaN(soDien) && soDien < 0) {
+            alert("Nhập số không hợp lệ")
+        } else {
+
+            if (soDien <= 50) {
+                 tien = soDien * 1678;
+            } else if (soDien <= 100) {
+                 tien = 50 * 1678 + (soDien - 50) * 1734;
+            } else if (soDien <= 200) {
+                 tien = 50 * 1678 + 50 * 1734 + (soDien - 50) * 2014;
+            } else {
+                 tien = 50 * 1678 + 50 * 1734 + 100 * 2014 + (soDien - 50) * 2536;
+            }
+            alert("Số tiền điện: " + tien + " VND")
+        }
+
+    </script>
+</body>
+
+</html>

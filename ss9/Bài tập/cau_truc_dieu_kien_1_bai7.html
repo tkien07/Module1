@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+
+<body>
+    <script>
+        // 0-50p - 600
+        // 51-100p - 400
+        // > 150p - 200
+        let soPhut = parseFloat(prompt("Nhập số phút gọi"));
+        let tien = 0;
+
+        if (isNaN(soPhut) || soPhut < 0) {
+            alert("Nhập số hợp lệ")
+        } else {
+            if (soPhut < 50) {
+                tien = soPhut * 600;
+            } else if (soPhut <= 150) {
+                tien = 50 * 600 + (soPhut - 50);
+            } else {
+                tien = 50 * 600 + 100 * 400 + (soPhut - 150) * 200;
+            }
+            alert("Số tiền: " + tien + " VND")
+        }
+
+    </script>
+</body>
+
+</html>
