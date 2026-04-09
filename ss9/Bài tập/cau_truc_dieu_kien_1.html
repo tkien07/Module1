@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <!-- <script>
+        
+        let a = prompt("Nhập số a");
+        let b = prompt("nhập số b");
+
+        let ketQua = a % b;
+        if( a%b == 0 ){
+            alert("a chia hết cho b")
+        } else{
+            alert("a không chia hết cho b")
+        
+        }
+    </script> -->
+
+    <!-- Bài 2 -->
+    <!-- <script>
+        let hocSinh = prompt("Nhập tuổi");
+
+        if( hocSinh === "" || hocSinh === null){
+            alert("Nhập tuổi của    bạn")
+        } else if( hocSinh >= 15)  {
+            alert("Đủ tuổi vào lớp 10")
+        } else{
+            alert ("Chưa đủ tuổi")
+        }
+     </script> -->
+    <!-- Bài 3 -->
+    <!-- <script>
+        let soNguyen = prompt("Nhập số nguyên bất kì");
+
+        if (soNguyen > 0){
+            {
+                alert("Số này lớn hơn 0");
+            }
+            if (soNguyen < 0){
+                alert("Số này nhỏ hơn 0");
+            }
+            
+        } else if (soNguyen == 0) {
+            alert("Số này bằng 0");
+
+        }
+</script> -->
+    <!-- Bài 4 -->
+    <!-- <script>
+        let a = prompt("Nhập a")
+        let b = prompt("Nhập b")
+        let c = prompt("Nhập c")
+
+        if((a != 0) && (b != 0) && (c != 0)){
+            if(( a > 0) && ( b > 0) && ( c > 0) ){
+                if((a > b) && (a > c)){
+                    alert(" a Số lớn nhất")
+                } else if((b > a) && (b > c)){
+                    alert("b bSố lớn nhất")
+                } else if((c > a) && (c > b)){
+                    alert("c Số lớn nhất")
+                } else{
+                    alert("Nhập đúng dữ liệu")
+                }
+            }
+        }
+      </script> -->
+    <!-- Bài 5 -->
+    <!-- <script>
+        let diemKiemTra = parseFloat(prompt("Nhập điểm kiểm tra"));
+        let diemGiuaKy = parseFloat(prompt("Nhập điểm giữa kỳ"));
+        let diemCuoiKy = parseFloat(prompt("Nhập điểm cuối kỳ"));
+
+        if ((isNaN(diemKiemTra) || isNaN(diemGiuaKy) || isNaN(diemCuoiKy))) {
+            alert("Nhập số hợp lệ")
+        } else {
+            let diemTB = (diemKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+            if (diemTB >= 8) {
+                alert("Học sinh giỏi")
+            } else if (diemTB >= 6.5) {
+                alert("Học sinh khá")
+            } else {
+                alert("Học sinh trung bình")
+            }
+        }
+    </script> -->
+    <!-- Bài 6 -->
+     <!-- <script>
+        let doanhSo = parseFloat(prompt("Nhập doanh số bán hàng"));
+        let hoaHong = 0;
+        if(doanhSo){
+            console.log(doanhSo)
+            if(doanhSo < 50){
+                hoaHong = doanhSo * 0.03;
+                alert(" Hoa hồng: " + hoaHong + "triệu");
+            } else if(doanhSo <= 100){
+                hoaHong = doanhSo * 0.05;
+                alert(" Hoa hồng: " + hoaHong + "triệu");
+            } else {
+                hoaHong = doanhSo * 0.07;
+            }
+            alert(" Hoa hồng: " + hoaHong + "triệu");
+        }
+        
+     </script> -->
+     <!-- Bài 7 -->
+      <script>
+        let soPhut = parseFloat(prompt("Nhập số phút gọi"));
+        let tien = 0;
+
+        if (isNaN(soPhut) || soPhut < 0){
+            alert("Nhập số hợp lệ")
+        } else {
+            if ( soPhut < 50){
+                tien = soPhut * 600;
+            } else if ( soPhut <=150){
+                tien = 50 * 600 + (soPhut - 50);
+            } else{
+                tien = 50 * 600 + 100 * 400 + (soPhut - 150) * 200;
+            }
+            alert("Số tiền: " + tien + " VND")
+        }
+        
+      </script>
+</body>
+
+</html>
