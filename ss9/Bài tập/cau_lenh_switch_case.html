@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kiểm tra số ngày trong tháng</h2>
+    <input type="number" name="thang" id="soNgay" va>
+    <button onclick="tinhThang()">Check</button>
+    <p id="ketQua">Hiển thị kết quả</p>
+    <script>
+        function tinhThang(){
+            let thang = parseInt(document.getElementById("soNgay").value);
+            let ketQua ="";
+
+            switch (thang){
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                ketQua = " Tháng " + thang + " là tháng có 31 ngày" 
+            break;
+            
+            case 4: case 6: case 9:  case 11:
+                ketQua = "Tháng " + thang + " là tháng có 30 ngày"
+            break;
+            
+            case 2: 
+            ketQua ="Tháng" + thang + "là tháng có 28 hoặc 29 ngày"
+            break;
+            default:
+                ketQua = "Vui lòng nhấp tháng"
+        }
+          document.getElementById("ketQua").innerHTML = ketQua;
+        }
+        
+        
+    </script>
+</body>
+</html>

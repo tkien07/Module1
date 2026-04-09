@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let x = parseInt(prompt("Cạnh x"));
+        let y = parseInt(prompt("Cạnh y"));
+        let z = parseInt(prompt("Cạnh z"));
+
+        if (isNaN(x) || isNaN(y) || isNaN(z) || x <= 0 || y <= 0 || z <= 0) {
+            alert("Không phải là cạnh của 1 tam giác");
+        } else if (x + y <= z || x + z <= y || y + z <= x) {
+            alert("Không phải là cạnh của 1 tam giác");
+        }
+        else {
+            if (x * x + y * y === z * z || x * x + z * z === y * y || y * y + z * z === x * x) {
+                alert("Đây tam giác vuông");
+            }
+            else {
+                alert("Chỉ là 3 cạnh của một tam giác");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
