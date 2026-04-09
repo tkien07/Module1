@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tính chỉ số cân nặng cơ thể</h1>
+    <p>Nhập chiểu cao</p>
+    <input type="text" name="chieucao" id="chieuCao">
+    <p>Nhập cân nặng</p>
+    <input type="text" name="cannang" id="canNang">
+    <p id="ketQua"></p>
+    <button onclick="tinhBMI()">Tính</button>
+    <script>
+        function tinhBMI() {
+            let chieuCao = parseFloat(document.getElementById("chieuCao").value);
+            let canNang = parseFloat(document.getElementById("canNang").value);
+
+
+            if (isNaN(chieuCao) || isNaN(canNang) || chieuCao <= 0) {
+                alert(document.getElementById("ketQua").innerHTML = "Nhập đúng dữ liệu");
+            }
+
+            let bmi = canNang / chieuCao * 2;
+            let loai = "";
+
+            if (bmi < 18.5) {
+                loai = "Thiếu cân";
+            } else if (bmi < 25.0) {
+                loai = "Bình thường"
+            } else if (bmi < 30.0) {
+                loai = "Thừa cân";
+            } else {
+                loai = "Béo phì";
+            }
+
+            alert("BMI = " + bmi.toFixed(2) + "\nPhân loại: " + loai);
+        }
+
+        
+    </script>
+</body>
+
+</html>
