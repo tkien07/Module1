@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12</title>
+</head>
+
+<body>
+    <script>
+        let tienBanDau = parseFloat(prompt("Nhập số tiền "));
+        let soThang = parseInt(prompt("Nhập số tháng"));
+        let laiSuat = parseFloat(prompt("Nhập lãi suất "));
+
+        if (tienBanDau <= 0 || soThang <= 0 || laiSuat <= 0) {
+            document.write("Dữ liệu không hợp lệ");
+        } else {
+            laiSuat = laiSuat / 100; 
+            let A = tienBanDau * Math.pow(1 + soThang, laiSuat);
+            document.write("Số tiền sau " + soThang + " tháng là: " + A.toFixed(2));
+        }
+    </script>
+</body>
+
+</html>
