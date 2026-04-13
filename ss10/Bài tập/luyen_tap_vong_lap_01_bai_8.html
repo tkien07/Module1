@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="choiGame()">Chơi</button>
+    <script>
+        function choiGame() {
+            let max = prompt("Bạn muốn đoán trong khoảng từ 0 đến bao nhiêu?");
+            let soDung = Math.floor(Math.random() * (Number(max) + 1));
+
+            for (let i = 1; i <= 3; i++) {
+                doan = prompt("Lượt " + i + ": Nhập số bạn đoán:");
+
+                if (doan === null)
+                    return;
+                if (doan == soDung) {
+                    alert("Chúc mừng! Bạn đã đoán đúng.");
+                } else if (doan > soDung) {
+                    alert("Số bạn đoán lớn hơn");
+                } else {
+                    alert("Số bạn đoán bé hơn");
+                }
+                if (i === 3) {
+                    alert("Bạn đã hết lượt đoán ");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

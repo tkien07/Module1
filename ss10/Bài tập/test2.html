@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="menu()">Menu</button>
+    <script>
+
+        let tongTien = 0;
+        function menu() {
+            let flag = true;
+
+            while (flag) {
+                let chonDanhMuc = prompt(
+                    "=== Menu === \n" +
+                    "1.Cacao 15k\n" +
+                    "2.Nước cam 20k\n" +
+                    "3.Cà phê 15k\n" +
+                    "4.Thoát\n" +
+
+                    " === Thanh toán === \n" +
+                    "    Giá tiền         " + tongTien + "\n"
+
+                );
+                switch (chonDanhMuc) {
+                    case "1":
+                        alert("Cacao");
+                        break;
+                    case "2":
+                        alert("Nước cam");
+                        break;
+                    case "3":
+                        alert("Cà phê");
+                        break;
+                    default:
+                        alert("Thoát");
+                        flag = false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
