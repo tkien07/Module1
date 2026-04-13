@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let n = parseFloat(prompt("Nhập số Fibonanci"));
+
+        if(isNaN(n) || n <= 0){
+            alert("Nhập số hợp lệ");
+        } else {
+            let a = 0, b = 1;
+            let ketQua = "";
+
+            for( let i = 1; i <= n; i++){
+                ketQua += a + " ";
+
+                let next = a + b;
+                a = b;
+                b = next;
+            }
+            alert("Dãy Fibonanci là: \n" + ketQua);
+        }
+    </script>
 </body>
 </html>
