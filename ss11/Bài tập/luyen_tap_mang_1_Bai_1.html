@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        let dem = 0;
+
+        for (let i = 0; i < 10; i++) {
+            array[i] = parseFloat(prompt("Nhập số nguyên: " + (i + 1)));
+        }
+        for (let i = 0; i < 10; i++) {
+            if (array[i] >= 10) {
+                dem++;
+            }
+        }
+        console.log("Số phần tử lớn hơn hoặc bằng 10: " + dem);
+    </script>
+</body>
+
+</html>

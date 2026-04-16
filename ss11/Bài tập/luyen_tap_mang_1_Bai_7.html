@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        let V;
+
+        for (let i = 0; i < 10; i++) {
+            a[i] = parseInt(prompt("Nhập số nguyên: " + (i + 1)));
+        }
+        V = parseInt(prompt("Nhập số nguyên V: "));
+        for (let i = 0; i < 10; i++) {
+            if (a[i] == V) {
+                for (let j = i; j < 9; j++) {
+                    a[j] = a[j + 1];
+                }
+                a[9] = 0;
+                break;
+            }
+        }
+        alert("Kết quả: " + a);
+    </script>
+</body>
+
+</html>

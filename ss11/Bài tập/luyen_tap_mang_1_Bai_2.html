@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        let max = 0;
+        let viTri = 0;
+
+        for (let i = 0; i < 10; i++) {
+            array[i] = parseFloat(prompt("Nhập số nguyên: " + (i + 1)));
+        }
+        max = array[0];
+
+        for (let i = 0; i < 10; i++) {
+            if (array[i] > max) {
+                max = array[i];
+                viTri = i;
+            }
+        }
+        console.log("Giá trị lớn nhất: " + max);
+        console.log("Vị trị của phần tử: " + viTri);
+    </script>
+</body>
+
+</html>

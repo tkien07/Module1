@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <!-- <script>
+            let myColor = ["Red", "Green", "While", "Black"];
+            let result = myColor.join(",");
+
+            console.log(result);
+      </script>   -->
+    <!-- Bài 2 -->
+    <!-- <script>
+         let s = [0,2,5,4,6,8];
+         let result = s[0];
+
+         for(let i = 1; i < s.length; i++){
+            if(s[i] % 2 == 0 && s[i-1] % 2 == 0){
+                result += " - ";
+            }
+            result += s[i];
+         }
+         console.log(result);
+       </script> -->
+    <!-- Bài 3 -->
+    <script>
+        let str = "The Quick Brown Fox";
+        let result = "";
+
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === str[i].toUpperCase()) {
+                result += str[i].toLowerCase();
+            } else {
+                result += str[i].toUpperCase();
+            }
+            console.log(result);
+        }
+    </script>
+</body>
+
+</html>

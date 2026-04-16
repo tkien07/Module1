@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [];
+
+        for( let i = 0; i < 10; i++){
+            array[i] = parseInt(prompt("Nhập số: " + (i + 1)));
+        }
+        let V = parseInt(prompt("Nhập v: "));
+        for(let i = 0; i < 10; i++){
+            if (array[i] == V){
+                console.log("V is in the array");
+                break;
+            }  
+            if ( i == 9) {
+                console.log("V is not in the array");
+            }
+        }
+       
+    </script>
+</body>
+</html>
