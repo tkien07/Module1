@@ -11,12 +11,12 @@
          let constellations = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
 
          function findStars(name){
-            let index = stars.indexOf(name);
-            if( index != -1){
-                return constellations[index];
-            } else{
-                return "Không tìm thấy";
+            for(let i = 0; i < stars.length; i++){
+                if(stars[i] === name){
+                    return constellations[i];
+                }
             }
+            return "Không tìm thấy";
          }
          let input = prompt("Nhập ngôi sao:");
          let result = findStars(input);
