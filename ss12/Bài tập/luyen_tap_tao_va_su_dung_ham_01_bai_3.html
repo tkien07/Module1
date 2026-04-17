@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function soSanh(a, b) {
+            if (a > b) {
+                alert("Tham số thứ nhất lớn hơn tham số thứ hai");
+            } else {
+                return a + b;
+            }
+        }
+
+        let a = parseFloat(prompt("Nhập tham số thứ nhất"));
+        let b = parseFloat(prompt("Nhập tham số thứ hai"));
+
+        let ketQua = soSanh(a, b);
+
+        if (ketQua !== undefined) {
+            alert("Tổng: " + ketQua + " là của 2 tham số này");
+        }
+    </script>
+</body>
+
+</html>
