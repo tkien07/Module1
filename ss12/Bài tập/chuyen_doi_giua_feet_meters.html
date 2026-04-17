@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function footToMeter(foot) {
+            return 0.305 * foot;
+        }
+        function meterToFoot(meter) {
+            return 3.279 * meter;
+        }
+
+        let foot = parseFloat(prompt("Nhập feet"));
+        let meter = parseFloat(prompt("Nhập meter"));
+
+        let ketQuaMeter = footToMeter(foot);
+        let ketQuaFoot =  meterToFoot(meter);
+        alert(foot + "Feet = " + ketQuaMeter + " meters");
+        alert(meter + "Meter = " + ketQuaFoot + " feet");
+        
+    </script>
+</body>
+
+</html>
