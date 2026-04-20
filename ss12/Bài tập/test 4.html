@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let array = [12, 41, 15, 45] ;
+        let count = 0; 
+        let result = [];
+        
+        for( let i = 0;  i < array.length; i++){
+            let s = array[i] + "";
+            let temptArray = s.split("");
+
+            if(temptArray[1] > temptArray[0]){
+                count++;
+                result.push(array[i])
+                
+            }
+            
+        }
+        if(count == array.length){
+            alert("Tất cả các số thỏa mãn: " + result.join(", "));
+        } else {
+            alert( result.join(", ") + "\n Có số không thỏa mãn"  );
+        }
+    </script>
+</body>
+</html>

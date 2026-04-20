@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [1, 2, 3, 4];
+        let countSo = 0;
+        let countChu = 0;
+
+        
+        for( let i = 0; i < array.length; i++ ){
+            if(!isNaN(array[i])){
+                countSo++;
+            } else {
+                countChu++;
+            }
+        }
+        if(countSo == array.length){
+            alert("OK số");
+        } else if (countChu == array.length) {
+            alert("QUa chữ rồi");
+        } else{
+            alert("Cả số cả chữ");
+        }
+        // if( array % 1 ==0){
+        //     alert("ok");
+        // } else {
+        //     alert("no");
+        // }
+        
+    </script>
+</body>
+</html>

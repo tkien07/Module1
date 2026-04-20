@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function dienTichHinhTron(r) {
+            return r * r * 3.14;
+        }
+        function chuViHinhTron(r) {
+            return 2 * r * 3.14;
+        }
+        let banKinh = parseFloat(prompt("Nhập bán kính: "));
+        let dienTich = dienTichHinhTron(banKinh);
+        let chuVi = chuViHinhTron(banKinh);
+
+        alert("Diện tích hình tròn là: " + dienTich);
+        alert("Chu vi hình tròn là: " + chuVi);
+
+
+    </script>
+</body>
+
+</html>

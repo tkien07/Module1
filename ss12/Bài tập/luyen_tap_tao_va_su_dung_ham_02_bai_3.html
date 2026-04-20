@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <script>
+        function giaiThua(n){
+            let result = 1;
+            for( let i = 1; i <= n; i++){
+                result *= i;
+            }
+            return result;
+        }
+        let n = parseFloat(prompt("Nhập số nguyên: "));
+        let kq = giaiThua(n);
+
+        alert("Kết quả của giai thừa là: " + kq);
+    </script>
+</body>
+</html>

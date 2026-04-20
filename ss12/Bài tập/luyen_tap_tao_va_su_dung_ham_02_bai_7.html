@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daoSoNguyen(arr){
+            let newArr = [];
+            for( let i = arr.length - 1; i >= 0; i--){
+                newArr.push(arr[i]);
+            }
+            return newArr;
+        }
+        let n = parseInt(prompt("Nhập số lượng phần tử: "));
+        let array = new Array(n);
+
+        for( let i = 0; i < n; i++){
+            array[i] = parseInt(prompt("Nhập phần tử" + i));
+        }
+
+        let result = daoSoNguyen(array);
+        alert("Mảng đảo ngược: " + result);
+    </script>
+</body>
+</html>

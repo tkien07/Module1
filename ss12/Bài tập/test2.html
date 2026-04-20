@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập các phần tử");
+        let array = new Array(n);
+        let count = 0;
+        let count1 = 0;
+
+        for( let i = 0; i < array.length; i++){
+            array[i] = +prompt(`Nhập các phần tử: ${i}`);
+        }
+        for( let i = 0; i < array.length - 1; i++){
+            let tempt = array[i + 1] - array[i];
+            if(tempt > 0){
+                count++;
+            } else if( tempt < 0){
+                count1++;
+            }
+        }
+        if(count == array.length - 1 || count1 == array.length - 1){
+            alert("OK");
+        } else {
+            alert("No ok");
+        }
+        // alert(array);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseFloat(prompt("Nhập độ dài mảng: "));
+        let array = new Array(n);
+
+        let count1 = 0;
+        let count2 = 0;
+        for (let i = 0; i < array.length; i++) {
+            array[i] = +prompt(`Nhập phần tử: ${i}`);
+        }
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                count1++;
+            } else {
+                count2++;
+            }
+        }
+        if (count1 == count2) {
+            alert("Ok");
+        } else {
+            alert("No ok");
+        }
+        // alert(array);
+    </script>
+</body>
+
+</html>

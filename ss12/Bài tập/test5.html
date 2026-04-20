@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <button onclick="addNew()">Add</button>
+    <p id="soLuong"></p>
+    
+
+    <div id="display"></div>
+
+    <script>
+        let productList = ["Samsung", "Nokia", "Iphone", "Xiaomi"];
+        display();
+        function addNew(){
+            let name = document.getElementById("name").value;
+            if( name != ""){
+                productList.push(name);
+            } else {
+                alert("Bạn cần nhập vào");
+            }
+            
+         document.getElementById("name").value = "";
+         
+            display();
+        }
+        function deleteProduct(index){
+            productList.splice(index,1);
+
+            display();
+            let conf = confirm(`Bạn có muốn xóa sản phầm "${productList[index]}" không ?`);
+            if(conf){
+                productList.splice(index,1);
+            }
+            display();
+        }   
+        function editProduct(index){
+            let newName = prompt("Nhập thông tin mới", productList[index]);
+            productList[index] = newName;
+            display();
+        }
+        function display() {
+            let tableString = `<table border="1" >
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Name</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>`;
+            for (let i = 0; i < productList.length; i++) {
+                tableString += `<tr>
+                                    <td>${i + 1}</td>
+                                    <td>${productList[i]}</td>
+                                    <td><button onclick="editProduct(${i})">Edit</button></td>
+                                    <td><button onclick="deleteProduct(${i})">Delete</button></td>
+                                </tr>`;
+                
+            }
+            tableString += `</table>`;
+
+            document.getElementById("display").innerHTML = tableString;
+            document.getElementById("soLuong").innerHTML = `Số lượng: ${productList.length}`;
+        }
+    </script>
+</body>
+
+</html>
