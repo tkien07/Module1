@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Circle = {
+            radius: 2,
+            getRadius(){
+                return this.radius;
+            },
+            getArea(){
+                return Math.PI * this.radius * this.radius;
+            }
+        };
+        console.log(Circle.getRadius() + " - " + Circle.getArea()); 
+    </script>
+</body>
+</html>
